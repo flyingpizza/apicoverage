@@ -83,7 +83,7 @@ def readapi(orginal_foo):
 
             unq_data = list(set(table_data))
             #MongoDB details
-            myclient = pymongo.MongoClient('mongodb://10.225.67.149:27017/')
+            myclient = pymongo.MongoClient('mongodb://<connection string>/')
             mydb = myclient['interapidata']
             mycol = mydb['apicollection']
            
